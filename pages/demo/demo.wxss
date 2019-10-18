@@ -1,0 +1,10 @@
+.container {
+  font-size: 20px;
+  color: #666666;
+  text-align: center;
+}
+.todo {
+  padding: 20px;
+  background: #f7f8fa;
+  border-bottom: 1px solid #e5e5e5;
+}

@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="to-do"
+             wx:for="{{toDo}}"
+             wx:key="{{index}}"
+             data-id="{{item.objectId}}"
+              bindtap="tap"
+             bindtouchend="touchend"
+             bindlongtap="longtap"
+  >
+   {{ index + 1 }}.{{ item.content }}
+  </view>
+  <view class="input-box">
+    <input type="text" value="{{todoVal}}" bindinput="onChange"/>
+  </view>
+<view class="button-box">
+  <van-button class="van-button" color="linear-gradient(to left, #af4123, #99ff00)" bindtap="submit">提交</van-button>
+</view>
+</view>
+
+

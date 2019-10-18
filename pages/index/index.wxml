@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper class="slide-show"
+              indicator-dots="{{indicatorDots}}"
+              autoplay="{{autoPlay}}"
+              circular="{{circular}}"
+              vertical="{{vertical}}"
+              interval="{{interval}}"
+              duration="{{duration}}"
+              previous-margin="{{previousMargin}}px"
+              next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}">
+              <image src="{{item.picture}}" class="picture"/>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>
+<view class="music-item" wx:for="{{musicItem}}" wx:key="*">
+    <image src="{{item.musicPic}}" class="music-pic"/>
+  <view class="music-desc">
+    <view class="music-name">{{item.musicName}}</view>
+    <view class="music-album">{{item.musicAlbum}}</view>
+  </view>
+  <image src="/image/pl-playall.png" class="play-all"/>
+</view>

@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="todo" wx:if="{{ !compile }}">{{ todos.content }}</view>
+  <view class="edit-input" wx:else>
+    <input bindinput= "changeVal" type="text" value="{{todos.content}}" style="border: 1px solid #999999;width: 100%;height: 40px"/>
+  </view>
+
+  <van-button
+      class="van-button"
+      color="linear-gradient(to left, #af4123, #99ff00)"
+      bindtap="editButton"
+  >{{compile ? '提交' :'编辑'}}</van-button>
+</view>

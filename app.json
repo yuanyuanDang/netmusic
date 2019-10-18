@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo/demo"
+    ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#af4123",
+    "navigationBarTitleText": "推荐音乐",
+    "navigationBarTextStyle": "white"
+  },
+    "tabBar": {
+      "selectedColor": "#af4123",
+      "color": "#666",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "推荐音乐",
+          "iconPath": "image/tb1-off.png",
+          "selectedIconPath": "image/tb1-on.png"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "我的音乐",
+          "iconPath": "image/tb2-off.png",
+          "selectedIconPath": "image/tb2-on.png"
+        }
+      ]
+    },
+      "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+      },
+      "debug": true,
+      "navigateToMiniProgramAppIdList": [
+        "wxe5f52902cf4de896"
+      ],
+  "sitemapLocation": "sitemap.json"
+
+  
+}
